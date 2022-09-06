@@ -1,3 +1,5 @@
+
+
 <?php
 
 use Illuminate\Database\Seeder;
@@ -15,103 +17,312 @@ class DatabaseSeeder extends Seeder
        
       //~1GBパターンのデータ
         DB::table('plans')->insert([
-            'plan_name' => 'LINEMO,povo2.0,楽天モバイル',
-            'capacity' => 1,    
+            'plan_name' => 'LINEMO',
+            'capacity' => 1,
             'cost' => 1,
             'carrier' =>1,
         ]);
         
         DB::table('plans')->insert([
-            'plan_name' => 'LINEMO,povo2.0,楽天モバイル',
+            'plan_name' => 'povo2.0',
+            'capacity' => 1,
+            'cost' => 1,
+            'carrier' =>1,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => '楽天モバイル',
+            'capacity' => 1,
+            'cost' => 1,
+            'carrier' =>1,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => 'LINEMO',
             'capacity' => 1,    
             'cost' => 2,
             'carrier' => 1,
         ]);
         
         DB::table('plans')->insert([
-            'plan_name' => 'LINEMO,povo2.0,楽天モバイル',
+            'plan_name' => 'povo2.0',
+            'capacity' => 1,    
+            'cost' => 2,
+            'carrier' => 1,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => '楽天モバイル',
+            'capacity' => 1,    
+            'cost' => 2,
+            'carrier' => 1,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => 'LINEMO',
             'capacity' => 1,    
             'cost' => 3,
             'carrier' => 1,
         ]);
         
         DB::table('plans')->insert([
-            'plan_name' => 'LINEMO,povo2.0,楽天モバイル',
+            'plan_name' => 'povo2.0',
+            'capacity' => 1,    
+            'cost' => 3,
+            'carrier' => 1,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => '楽天モバイル',
+            'capacity' => 1,    
+            'cost' => 3,
+            'carrier' => 1,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => 'LINEMO',
             'capacity' => 1,    
             'cost' => 4,
             'carrier' => 1,
         ]);
         
         DB::table('plans')->insert([
-            'plan_name' => '日本通信,HISモバイル,IIjimo',
+            'plan_name' => 'povo2.0',
+            'capacity' => 1,    
+            'cost' => 4,
+            'carrier' => 1,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => '楽天モバイル',
+            'capacity' => 1,    
+            'cost' => 4,
+            'carrier' => 1,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => '日本通信',
             'capacity' => 1,    
             'cost' => 1,
             'carrier' => 2,
         ]);
         
         DB::table('plans')->insert([
-            'plan_name' => '日本通信,HISモバイル,IIjimo',
+            'plan_name' => 'HISモバイル',
+            'capacity' => 1,    
+            'cost' => 1,
+            'carrier' => 2,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => 'IIjimo',
+            'capacity' => 1,    
+            'cost' => 1,
+            'carrier' => 2,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => '日本通信',
             'capacity' => 1,    
             'cost' => 2,
             'carrier' => 2,
         ]);
         
         DB::table('plans')->insert([
-            'plan_name' => '日本通信,HISモバイル,IIjimo',
+            'plan_name' => 'HISモバイル',
+            'capacity' => 1,    
+            'cost' => 2,
+            'carrier' => 2,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => 'IIjimo',
+            'capacity' => 1,    
+            'cost' => 2,
+            'carrier' => 2,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => '日本通信',
             'capacity' => 1,    
             'cost' => 3,
             'carrier' => 2,
         ]);
         
         DB::table('plans')->insert([
-            'plan_name' => '日本通信,HISモバイル,IIjimo',
+            'plan_name' => 'HISモバイル',
+            'capacity' => 1,    
+            'cost' => 3,
+            'carrier' => 2,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => 'IIjimo',
+            'capacity' => 1,    
+            'cost' => 3,
+            'carrier' => 2,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => '日本通信',
             'capacity' => 1,    
             'cost' => 4,
             'carrier' => 2,
         ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => 'HISモバイル',
+            'capacity' => 1,    
+            'cost' => 4,
+            'carrier' => 2,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => 'IIjimo',
+            'capacity' => 1,    
+            'cost' => 4,
+            'carrier' => 2,
+        ]);
+        
         
       //3GBパターンのデータ
         DB::table('plans')->insert([
-            'plan_name' => 'LINEMO,povo2.0,楽天モバイル',
+            'plan_name' => 'LINEMO',
             'capacity' => 2,    
             'cost' => 1,
             'carrier' =>1,
         ]);
         
         DB::table('plans')->insert([
-            'plan_name' => 'LINEMO,povo2.0,楽天モバイル',
+            'plan_name' => 'povo2.0',
+            'capacity' => 2,    
+            'cost' => 1,
+            'carrier' =>1,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => '楽天モバイル',
+            'capacity' => 2,    
+            'cost' => 1,
+            'carrier' =>1,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => 'LINEMO',
             'capacity' => 2,    
             'cost' => 2,
             'carrier' => 1,
         ]);
         
         DB::table('plans')->insert([
-            'plan_name' => 'LINEMO,povo2.0,楽天モバイル',
+            'plan_name' => 'povo2.0',
+            'capacity' => 2,    
+            'cost' => 2,
+            'carrier' => 1,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => '楽天モバイル',
+            'capacity' => 2,    
+            'cost' => 2,
+            'carrier' => 1,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => 'LINEMO',
             'capacity' => 2,    
             'cost' => 3,
             'carrier' => 1,
         ]);
         
         DB::table('plans')->insert([
-            'plan_name' => 'LINEMO,povo2.0,楽天モバイル',
+            'plan_name' => 'povo2.0',
+            'capacity' => 2,    
+            'cost' => 3,
+            'carrier' => 1,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => '楽天モバイル',
+            'capacity' => 2,    
+            'cost' => 3,
+            'carrier' => 1,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => 'LINEMO',
             'capacity' => 2,    
             'cost' => 4,
             'carrier' => 1,
         ]);
         
         DB::table('plans')->insert([
-            'plan_name' => 'HISモバイル,LINEMO,IIjimo',
+            'plan_name' => 'povo2.0',
+            'capacity' => 2,    
+            'cost' => 4,
+            'carrier' => 1,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => '楽天モバイル',
+            'capacity' => 2,    
+            'cost' => 4,
+            'carrier' => 1,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => 'HISモバイル',
             'capacity' => 2,    
             'cost' => 1,
             'carrier' => 2,
         ]);
         
         DB::table('plans')->insert([
-            'plan_name' => 'HISモバイル,LINEMO,楽天モバイル',
+            'plan_name' => 'LINEMO',
+            'capacity' => 2,    
+            'cost' => 1,
+            'carrier' => 2,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => '楽天モバイル',
+            'capacity' => 2,    
+            'cost' => 1,
+            'carrier' => 2,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => 'HISモバイル',
             'capacity' => 2,    
             'cost' => 2,
             'carrier' => 2,
         ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => 'LINEMO',
+            'capacity' => 2,    
+            'cost' => 2,
+            'carrier' => 2,
+        ]);
+        
+        DB::table('plans')->insert([
+            'plan_name' => '楽天モバイル',
+            'capacity' => 2,    
+            'cost' => 2,
+            'carrier' => 2,
+        ]);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         DB::table('plans')->insert([
             'plan_name' => 'HISモバイル,LINEMO,楽天モバイル',
