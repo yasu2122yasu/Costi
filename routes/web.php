@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//時間があればsearchとresultでコントローラーを分ける
+Route::get('/', 'PlanController@search');
+Route::get('/result', 'PlanController@result');
