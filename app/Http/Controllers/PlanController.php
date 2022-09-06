@@ -37,7 +37,7 @@ class PlanController extends Controller
         $costs = config('costs');
         $carriers = config('carriers');
 
-        //view(search.blade.php)に変数を渡す。14個
+        //view(search.blade.php)に変数を渡す。
         $data = [
             "capacities" => $capacities,
             "costs" => $costs,
@@ -73,12 +73,12 @@ class PlanController extends Controller
             $query->where('cost', $search_cost)->get();
         }
         
-        if(!is_null($search_carrier) && search_carrier != 0) {
-            $query->where('carrier', $search_carrer)->get();
+        if(!is_null($search_carrier) && $search_carrier != 0) {
+            $query->where('carrier', $search_carrier)->get();
         }
 
         //1ページ10件でページネーションを追加　（orderBy()を使用し、plansを昇順で表示）
-        $plans = $query->orderBy('id', 'asc')->paginate(10);
+        $plans = $query->orderBy('id', 'asc')->paginate(1);
         
         $capacities = config('capacities');
         $costs = config('costs');

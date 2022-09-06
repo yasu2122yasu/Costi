@@ -9,11 +9,10 @@
     <!-- 検索した条件と一致するプランがあれば表示 --> 
 
     @foreach($plans as $plan)
-
-    <div class="card m-5">
+    <div>
         <div class="m-4 row">
             <div class="col-10">
-                <h4>
+                <h4 class="font-weight-bold positon">
                     {{ $plan->plan_name }}
                 </h4>
             </div>
