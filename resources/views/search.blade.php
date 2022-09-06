@@ -15,7 +15,7 @@
           
             @csrf
                 <div class="form-group">
-                    <div class><label for="mobile_GB">毎月使用している容量</label></div>
+                    <div class><label for="capacity">毎月使用している容量</label></div>
                         <select class="form-control" name="capacity">
                             @foreach((array)$capacities as $key => $capacity)
                               <option value="{{ $key }}" @if( isset($old_capacity) && (int)$old_capacity === $key ) selected @endif>
