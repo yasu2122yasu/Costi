@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\DB;
 class PlanController extends Controller
 {
     
-//search関数
+//search関数でsearch.blade.phpに値を渡す。
     public function search(Request $request)
     {
         //capcityに送られてきたデータを変数に保存
