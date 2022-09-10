@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="form-group">
-                    <div class><label for="carrier">月額の携帯料金</label></div>
+                    <div class><label for="carrier">キャリアのこだわり</label></div>
                         <select class="form-control" name="carrier">
                             @foreach((array)$carriers as $key => $carrier)
                               <option value="{{ $key }}" @if( isset($old_carrier) && (int)$old_carrier === $key ) selected @endif>
