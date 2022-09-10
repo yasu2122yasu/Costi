@@ -13,7 +13,7 @@
         <div class="m-4 row">
             <div class="col-10">
                 <h4 class="font-weight-bold positon">
-                    {{ $plan->plan_name }}
+                    {!! nl2br(e($plan->plan_name)) !!}
                 </h4>
             </div>
         </div>
