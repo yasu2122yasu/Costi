@@ -7,7 +7,7 @@
 </head>
   <body>
     <div class="text-center mt-4">
-      <h2>固定費2.0</h2>
+      <h2>スマホ回線2.0</h2>
     </div>    
       <div class="row mt-3 mb-5">
         <div class="col-md-6 offset-md-3">
@@ -48,7 +48,7 @@
                 </div>
                 
              <div class="col-md-6 offset-md-3 text-center">
-                 <input type="submit" class="btn btn-secondary mt-2" value="検索">
+                 <input type="submit" class="btn btn-primary" value="検索">
              </div>
     
 

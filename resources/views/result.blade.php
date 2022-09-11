@@ -28,6 +28,6 @@
     @endif
 
     <div class="row justify-content-center mb-3">
-        <a class="text-decoration-none mt-2" href="/" name="back" style="color: gray;">検索画面へ戻る</a>
+        <a class="btn btn-danger" href="/" name="back" style="color: white;">検索画面へ戻る</a>
     </div>
 </html>
