@@ -1,0 +1,25 @@
+.button_solid006 a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 240px;
+    padding: 6px 25px;
+    background: #6bb6ff;
+    color: #FFF;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    border-radius: 100px;
+    box-shadow: 0 5px 0px #4f96f6, 0 10px 100px #4f96f6;
+}
+.button_solid006 a:hover{
+  background:#FF2F2F;
+  box-shadow: 0 5px 0px #B73434,0 7px 30px #FF2F2F;
+}
+
+.button_solid006 a:active{
+  background:#FF8282;
+  box-shadow: 0 0px 10px #FF8282;
+  box-shadow: 0 5px 0px #CC6262,0 4px 10px #FF8282;
+}
