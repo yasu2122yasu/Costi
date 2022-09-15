@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  
     <title>スマホ回線2.0</title>
 </head>
   <body>
-    <div class="text-center mt-4">
+    <div class="text-center mt-6" ".w-100">
+      <br>
       <h2>スマホ回線2.0</h2>
     </div>    
-      <div class="row mt-3 mb-5">
-        <div class="col-md-6 offset-md-3">
+      <div class="row mt-3 mb-5" ".w-100">
+        <div class="col-md-6 offset-md-3" ".w-100">
           <form method="get" action="/result" class="search-form">
           
             @csrf
