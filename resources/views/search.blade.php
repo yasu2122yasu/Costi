@@ -16,7 +16,7 @@
           <form method="get" action="/result" class="search-form">
           
             @csrf
-                <div class="form-group">
+                <div class="form-group" ".w-100">
                     <div class><label for="capacity">毎月使用している容量</label></div>
                         <select class="form-control" name="capacity">
                             @foreach((array)$capacities as $key => $capacity)

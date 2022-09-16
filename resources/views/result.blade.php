@@ -28,10 +28,6 @@
             <p class="mt-4">{{ "お探しのプランはありませんでした。他の検索条件を試してみてください。" }}</p>
         </div>
     @endif
-    
-    <div class="row justify-content-center mb-3">
-        <a class="btn btn-danger" href= "https://px.a8.net/svt/ejp?a8mat=3NJ0BW+EMWN5E+4TIO+5Z6WX" style="color: white;">5分間無料通話&20GBのahamoのお申し込みはこちらから！</a>
-    </div>
 
     <div class="row justify-content-center mb-3">
         <a class="btn btn-light" href="/" name="back" style="color: black;">検索画面へ戻る</a>
