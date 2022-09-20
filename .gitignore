@@ -11,5 +11,5 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 
-hide.result.blade.php
-
+resources/views/result.blade.php
+resources/views/search.blade.php
