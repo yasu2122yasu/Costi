@@ -1,4 +1,18 @@
-# 携帯料金の節約アプリ
+<h1>スマホ回線2.0<h1>
+<h2>プロダクトの概要</h2>
+物価高が徐々に進行する現在の日本で、真っ先に節約しないといけないのは通信費をはじめとした固定費です。
+スマホ回線2.0を利用することで、本当に自分に合ったスマホ回線を検索することができます。
+<h2>主な使用技術/ツール</h2>
+・Laravel
+・PHP
+・Bootstrap
+・Heroku
+・Google Analytics
+<h2>URL</h2>
+https://ancient-waters-98823.herokuapp.com/
+<h2>改善点</h2>
+<h3>2022.09.21</h3>
+・ユーザーからのフィードバックをもとにレスポンシブデザインに対応しました。
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
