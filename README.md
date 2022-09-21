@@ -3,11 +3,11 @@
 物価高が徐々に進行する現在の日本で、真っ先に節約しないといけないのは通信費をはじめとした固定費です。
 スマホ回線2.0を利用することで、本当に自分に合ったスマホ回線を検索することができます。
 <h2>主な使用技術/ツール</h2>
-・Laravel
-・PHP
-・Bootstrap
-・Heroku
-・Google Analytics
+・Laravel<br>
+・PHP<br>
+・Bootstrap<br>
+・Heroku<br>
+・Google Analytics<br>
 <h2>URL</h2>
 https://ancient-waters-98823.herokuapp.com/
 <h2>改善点</h2>
