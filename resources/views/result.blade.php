@@ -34,7 +34,15 @@
     </div>
     
     <div class="row justify-content-center mb-3">
-        <a class="btn btn-primary" href="https://h.accesstrade.net/sp/cc?rk=0100ohcq00lxzp" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">格安SIMのHISモバイル公式サイトをこちら！<img src="https://h.accesstrade.net/sp/rr?rk=0100ohcq00lxzp" width="1" height="1" border="0" alt="" /></a>
+        <a class="btn btn-primary" href="https://h.accesstrade.net/sp/cc?rk=0100ohcq00lxzp" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">格安SIMのHISモバイル公式サイトをこちら！</a>
+    </div>
+            
+    <div class="row justify-content-center mb-3">
+        <a class="btn btn-secondary" href="https://www.linemo.jp/">LINEMOのお申し込みはこちらから！</a>
+    </div>
+            
+    <div class="row justify-content-center mb-3">
+        <a class="btn btn-secondary" href="https://network.mobile.rakuten.co.jp/">楽天モバイルのお申し込みはこちらから！</a>
     </div>
             
 
