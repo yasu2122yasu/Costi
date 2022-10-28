@@ -4,11 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Plan extends Model
+class Detail extends Model
 {
-<<<<<<< HEAD
-
-=======
     //
->>>>>>> feature
 }
