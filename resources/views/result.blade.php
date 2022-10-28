@@ -6,10 +6,7 @@
 <head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
-=======
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
->>>>>>> feature
 </head>
 <body>
 <div class="text-center mt-6">
@@ -40,7 +37,21 @@
     @endif
     
     <div class="row justify-content-center mb-3">
-
+        <a class="btn btn-danger" href= "https://px.a8.net/svt/ejp?a8mat=3NJ0BW+EMWN5E+4TIO+5Z6WX" style="color: white;">5分間無料通話&20GBのahamoのお申し込みはこちら！</a>
+    </div>
+    
+    <div class="row justify-content-center mb-3">
+        <a class="btn btn-primary" href="https://h.accesstrade.net/sp/cc?rk=0100ohcq00lxzp" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">格安SIMのHISモバイル公式サイトをこちら！</a>
+    </div>
+            
+    <div class="row justify-content-center mb-3">
+        <a class="btn btn-secondary" href="https://www.linemo.jp/">LINEMOのお申し込みはこちらから！</a>
+    </div>
+            
+    <div class="row justify-content-center mb-3">
+        <a class="btn btn-secondary" href="https://network.mobile.rakuten.co.jp/">楽天モバイルのお申し込みはこちらから！</a>
+    </div>
+            
 
 
     <div class="row justify-content-center mb-3">
