@@ -18,11 +18,11 @@ https://ancient-waters-98823.herokuapp.com/
 ・視認性の高いデザインに変更しました。
 ・テーブル構造を変更しました。
 <h2>検討事項</h2>
-・Herokuからレンタルサーバー/AWSへの移行
-・フロントエンドにVue.jsの導入（メリットは小さい？）
-・plansテーブルのカラムを減らすためにリレーションを検討、costとfeeの統合検討
-・検索画面の不具合解消（ワイドモニタ利用時、レイアウトが崩れる）
-・プラン数の増加（目標50)
+・Herokuからレンタルサーバー/AWSへの移行<br>
+・フロントエンドにVue.jsの導入（メリットは小さい？）<br>
+・plansテーブルのカラムを減らすためにリレーションを検討、costとfeeの統合検討<br>
+・検索画面の不具合解消（ワイドモニタ利用時、レイアウトが崩れる）<br>
+・プラン数の増加（目標50)<br>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
