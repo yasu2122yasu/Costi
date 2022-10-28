@@ -16,13 +16,15 @@
     <div class="row mt-3 mb-5" ".w-150">
         <div class="col-md-6 offset-md-3" ".w-120">        
             <div class="box30">
-                <div class="box-title">{{$plan->id}} . {{ $plan->plan_name }}</div>
-                <p>
-                  ・{{ $plan->fee }}<br>
+                <div class="box-title">
+                      {{$plan->id}} . {{ $plan->plan_name }}
+                </div>
+                <div class="box-content">
+                  ・{{ $plan->fee }}円<br>
                   ・{{ $plan->url }}<br>
                   ・a<br>
                   ・a<br>
-                </p>
+                </div>
                 <a href="" class="btn btn-c btn--green btn--cubic"><i class="fa fas fa-envelope"></i>お問い合わせはこちら</a>
             </div>
         </div>

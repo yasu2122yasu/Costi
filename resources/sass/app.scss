@@ -112,7 +112,7 @@ $primary-color: #079ad9;
     position: relative;
     margin: 0 0;
     padding: 0.5em 100px;
-    border: solid 3px #95ccff;
+    border: solid 3px #079ad9;;
     border-radius: 8px;
     width: 100%;
     align-items: center;
@@ -121,17 +121,17 @@ $primary-color: #079ad9;
     position: absolute;
     display: inline-block;
     top: -13px;
-    left: 10px;
+    left: 15px;
     padding: 0 9px;
     line-height: 1;
-    font-size: 25px;
+    font-size: 27px;
     background: #FFF;
-    color: #95ccff;
+    color: #079ad9;
     font-weight: bold;
 }
 
-.box30 p {
-    margin: 30px 0px 0px 0px; 
+.box30 .box-content {
+    margin: 30px 0px 30px 0px; 
     padding: 0;
     text-align: left;
     font-weight: bold;
