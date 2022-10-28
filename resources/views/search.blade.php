@@ -11,49 +11,6 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
   <body>
-<<<<<<< HEAD
-    <div class="text-center mt-6" ".w-100">
-      <br>
-      <h2>スマホ回線2.0</h2>
-    </div>    
-      <div class="row mt-3 mb-5" ".w-100">
-        <div class="col-md-6 offset-md-3" ".w-100">
-          <form method="get" action="/result" class="search-form">
-          
-            @csrf
-                <div class="form-group" ".w-100">
-                    <div class><label for="capacity">毎月使用している容量</label></div>
-                        <select class="form-control" name="capacity">
-                            @foreach((array)$capacities as $key => $capacity)
-                              <option value="{{ $key }}" @if( isset($old_capacity) && (int)$old_capacity === $key ) selected @endif>
-                                  {{ $capacity }}
-                              </option>
-                            @endforeach
-                        </select>
-                </div>
-
-                <div class="form-group">
-                    <div class><label for="cost">毎月のスマホ料金</label></div>
-                        <select class="form-control" name="cost">
-                            @foreach((array)$costs as $key => $cost)
-                              <option value="{{ $key }}" @if( isset($old_cost) && (int)$old_cost === $key ) selected @endif>
-                                  {{ $cost }}
-                              </option>
-                            @endforeach
-                        </select>
-                </div>
-
-                <div class="form-group">
-                    <div class><label for="carrier">キャリアのこだわり</label></div>
-                        <select class="form-control" name="carrier">
-                            @foreach((array)$carriers as $key => $carrier)
-                              <option value="{{ $key }}" @if( isset($old_carrier) && (int)$old_carrier === $key ) selected @endif>
-                                  {{ $carrier }}
-                              </option>
-                            @endforeach
-                        </select>
-                </div>
-=======
     <div class="text-center mt-6 search-title" ".w-100">
       <h2>スマホ回線2.0</h2>
     </div>    
@@ -62,9 +19,7 @@
           <form method="get" action="/result" class="search-form">
           
             @csrf
->>>>>>> feature
-                
-          <div class="text-center title-color"><label for="capacity">毎月のデータ使用量を選択してください</label></div>
+          <div class="text-center search-title"><label for="capacity">毎月のデータ使用量を選択してください</label></div>
            <div class="container">
             <div class="radio-tile-group">
               
@@ -98,7 +53,7 @@
               
           
           <!--料金検索のラジオボタン-->
-          <div class="text-center title-color"><label for="cost">毎月のスマホ料金は？</label></div>
+          <div class="text-center search-title"><label for="cost">毎月のスマホ料金は？</label></div>
            <div class="container">
             <div class="radio-tile-group">
               
@@ -133,7 +88,7 @@
           </div>
           
           
-          <div class="text-center title-color"><label for="carrier">大手キャリアを利用したいですか？</label></div>
+          <div class="text-center search-title"><label for="carrier">大手キャリアを利用したいですか？</label></div>
            <div class="container">
             <div class="radio-tile-group">
               
@@ -168,6 +123,5 @@
         </div>    
       </div>  
   </body>
-    
 </html>
 @endsection
