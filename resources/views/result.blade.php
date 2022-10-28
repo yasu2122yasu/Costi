@@ -30,8 +30,7 @@
     @endif
     
     <div class="row justify-content-center mb-3">
-<<<<<<< HEAD
->>>>>>> a328d88 (ahamoの広告追加)
+
 
     <div class="row justify-content-center mb-3">
         <a class="btn btn-light" href="/" name="back" style="color: black;">検索画面へ戻る</a>
