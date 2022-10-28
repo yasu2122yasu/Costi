@@ -23,6 +23,7 @@ https://ancient-waters-98823.herokuapp.com/
 ・plansテーブルのカラムを減らすためにリレーションを検討、costとfeeの統合検討<br>
 ・検索画面の不具合解消（ワイドモニタ利用時、レイアウトが崩れる）<br>
 ・プラン数の増加（目標50)<br>
+・テーブルのカラム数を増やして対応しているものをコントローラーに書き直す<br>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
