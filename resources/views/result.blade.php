@@ -7,11 +7,10 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
- <link href="{{ asset('css/app.css') }}" rel="stylesheet">
- </head>
- <body>
- <div class="text-center mt-6">
-     <h2 class="result-title">おすすめのプラン一覧はこちら
+</head>
+<body>
+<div class="text-center mt-6">
+    <h2 class="result-title">おすすめのプラン一覧はこちら！</h2>
     <!-- 検索した条件と一致するプランがあれば表示 --> 
     @foreach($plans as $plan)
     <div class="row mt-3 mb-5" ".w-150">
