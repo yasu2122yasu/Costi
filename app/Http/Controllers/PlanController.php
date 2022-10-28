@@ -32,16 +32,8 @@ class PlanController extends Controller
           'old_carrier'
         ]);
 
-        //configから各項目をそれぞれ代入
-        $capacities = config('capacities');
-        $costs = config('costs');
-        $carriers = config('carriers');
-
         //view(search.blade.php)に変数を渡す。
         $data = [
-            "capacities" => $capacities,
-            "costs" => $costs,
-            "carriers" => $carriers,
             "old_capacity" => $old_capacity,
             "old_cost" => $old_cost,
             "old_carrier" => $old_carrier
@@ -65,24 +57,23 @@ class PlanController extends Controller
     
 
         //dbの$capacity とアプリ側の $capacity が一致していれば取得
-        if (!is_null($search_capacity) && $search_capacity != 0) {
-            $query->where('capacity', $search_capacity)->get();
+        if (!is_null($search_capacity)) {
+            $query->where('capacity', '=', $search_capacity)->get();
+
         }
         
-        if(!is_null($search_cost) && $search_cost != 0) {
-            $query->where('cost', $search_cost)->get();
+        if (!is_null($search_cost)) {
+            $query->where('cost', '=', $search_cost)->get();
         }
         
-        if(!is_null($search_carrier) && $search_carrier != 0) {
-            $query->where('carrier', $search_carrier)->get();
+        if (!is_null($search_carrier)) {
+            $query->where('carrier', '=', $search_carrier)->get();
         }
+        
+        
 
         //1ページ10件でページネーションを追加　（orderBy()を使用し、plansを昇順で表示）
-        $plans = $query->orderBy('id', 'asc')->paginate(1);
-        
-        $capacities = config('capacities');
-        $costs = config('costs');
-        $carriers = config('carriers');
+        $plans = $query->orderBy('id', 'asc')->paginate(5);
 
         $request->session()->put("old_capacity", $search_capacity);
         $request->session()->put("old_cost", $search_cost);
@@ -107,9 +98,7 @@ class PlanController extends Controller
             "search_capacity" => $search_capacity,
             "search_cost" => $search_cost,
             "search_carrier" =>$search_carrier,
-            
             "plans" => $plans,
-            
             "old_capacity" => $old_capacity,
             "old_cost" => $old_cost,
             "old_carrier" => $old_carrier,
