@@ -21,11 +21,14 @@
                 </div>
                 <div class="box-content">
                   ・{{ $plan->fee }}円<br>
-                  ・{{ $plan->url }}<br>
-                  ・a<br>
-                  ・a<br>
+                  ・{{ $plan->carrier }}<br>
+                  ・{!! ($plan->url_with_link) !!}<br>
+                  
                 </div>
-                <a href="" class="btn btn-c btn--green btn--cubic"><i class="fa fas fa-envelope"></i>お問い合わせはこちら</a>
+                <div class="btn btn-c btn--green btn--cubic">お問い合わせはこちら
+                  @php echo "<a href='".$plan['url']."'  ></a>"; @endphp
+                </div>
+                
             </div>
         </div>
     </div>
