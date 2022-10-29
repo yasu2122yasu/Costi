@@ -22,11 +22,9 @@
                 <div class="box-content">
                   ・料金：{{ $plan->fee }}円<br>
                   ・使用回線：{{ $plan->carrier }}<br>
-                  ・URL：{!! ($plan->url_with_link) !!}<br>
-                  
                 </div>
                 <div class="btn btn-c btn--green btn--cubic">
-                  @php echo "<a class href='".$plan['url']."'>お問合せはこちら</a>"; @endphp
+                  @php echo "<a class href='".$plan['url']."'>お申し込みはこちら</a>"; @endphp
                 </div>
                 
             </div>

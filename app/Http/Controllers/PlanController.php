@@ -74,11 +74,11 @@ class PlanController extends Controller
         $plans = $query->orderBy('fee', 'asc')->paginate(5);
         
         //URL取得時にURLを指定してリダイレクト先を指定する。
-        if (empty($plans->id)){
-            $alert = "<script type='text/javascript'>alert('この検索結果に合致するプランがありません。');</script>";
-            echo $alert;
-            echo '<script>location.host ;</script>';
-        }
+        // if (empty($plans->id)){
+        //     $alert = "<script type='text/javascript'>alert('この検索結果に合致するプランがありません。');</script>";
+        //     echo $alert;
+        //     echo '<script>location.host ;</script>';
+        // }
         
         $request->session()->put("old_capacity", $search_capacity);
         $request->session()->put("old_cost", $search_cost);
