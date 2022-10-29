@@ -631,5 +631,97 @@ class DatabaseSeeder extends Seeder
             'url' => "https://join.biglobe.ne.jp/mobile/plan/?cl=head_mobile_plan"
         ]);
         
+        //ここからダミー 121
+        DB::table('plans')->insert([
+            'plan_name' => "ahamo",
+            'provider' => "NTTドコモ",
+            'limited_speed' => "1Mbps",
+            'GB' => "20",
+            'capacity' => 1,
+            'cost' => 2,
+            'fee' => 2970,
+            'carrier' => "大手キャリア",
+            'url' => "https://ahamo.com/plan/"
+        ]);
+        
+        //211
+        DB::table('plans')->insert([
+            'plan_name' => "ahamo",
+            'provider' => "NTTドコモ",
+            'limited_speed' => "1Mbps",
+            'GB' => "20",
+            'capacity' => 1,
+            'cost' => 1,
+            'fee' => 2970,
+            'carrier' => "大手キャリア",
+            'url' => "https://ahamo.com/plan/"
+        ]);
+        
+        //311
+        DB::table('plans')->insert([
+            'plan_name' => "ahamo",
+            'provider' => "NTTドコモ",
+            'limited_speed' => "1Mbps",
+            'GB' => "20",
+            'capacity' => 3,
+            'cost' => 1,
+            'fee' => 2970,
+            'carrier' => "大手キャリア",
+            'url' => "https://ahamo.com/plan/"
+        ]);
+        
+        
+        //321
+        DB::table('plans')->insert([
+            'plan_name' => "ahamo",
+            'provider' => "NTTドコモ",
+            'limited_speed' => "1Mbps",
+            'GB' => "20",
+            'capacity' => 3,
+            'cost' => 2,
+            'fee' => 2970,
+            'carrier' => "大手キャリア",
+            'url' => "https://ahamo.com/plan/"
+        ]);
+        
+        //132
+        DB::table('plans')->insert([
+            'plan_name' => "くりこしプランM",
+            'provider' => "UQ mobile",
+            'limited_speed' => "1Mbps",
+            'GB' => "15GB",
+            'capacity' => 1,    
+            'cost' => 3,
+            'fee' => 2728,
+            'carrier' => "MVNO",
+            'url' => "https://join.biglobe.ne.jp/mobile/plan/?cl=head_mobile_plan"
+        ]);
+        
+        //212
+        DB::table('plans')->insert([
+            'plan_name' => "くりこしプランM",
+            'provider' => "UQ mobile",
+            'limited_speed' => "1Mbps",
+            'GB' => "15GB",
+            'capacity' => 2,    
+            'cost' => 1,
+            'fee' => 2728,
+            'carrier' => "MVNO",
+            'url' => "https://join.biglobe.ne.jp/mobile/plan/?cl=head_mobile_plan"
+        ]);
+        
+        //312
+        DB::table('plans')->insert([
+            'plan_name' => "くりこしプランM",
+            'provider' => "UQ mobile",
+            'limited_speed' => "1Mbps",
+            'GB' => "15GB",
+            'capacity' => 3,    
+            'cost' => 1,
+            'fee' => 2728,
+            'carrier' => "MVNO",
+            'url' => "https://join.biglobe.ne.jp/mobile/plan/?cl=head_mobile_plan"
+        ]);
+        
     }
 }

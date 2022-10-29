@@ -69,10 +69,9 @@ class PlanController extends Controller
             $query->where('carrier', '=', $search_carrier)->get();
         }
         
-        //1ページ10件でページネーションを追加　（orderBy()を使用し、plansを昇順で表示）
-        if (!is_null($query)){
+        //1ページ5件でページネーションを追加　（orderBy()を使用し、plansを昇順で表示）
         $plans = $query->orderBy('fee', 'asc')->paginate(5);
-        }
+        
         
         $request->session()->put("old_capacity", $search_capacity);
         $request->session()->put("old_cost", $search_cost);
