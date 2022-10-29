@@ -20,13 +20,13 @@
                       {{$plan->id}} . {{ $plan->plan_name }}
                 </div>
                 <div class="box-content">
-                  ・{{ $plan->fee }}円<br>
-                  ・{{ $plan->carrier }}<br>
-                  ・{!! ($plan->url_with_link) !!}<br>
+                  ・料金：{{ $plan->fee }}円<br>
+                  ・使用回線：{{ $plan->carrier }}<br>
+                  ・URL：{!! ($plan->url_with_link) !!}<br>
                   
                 </div>
-                <div class="btn btn-c btn--green btn--cubic">お問い合わせはこちら
-                  @php echo "<a href='".$plan['url']."'  ></a>"; @endphp
+                <div class="btn btn-c btn--green btn--cubic">
+                  @php echo "<a class href='".$plan['url']."'>お問合せはこちら</a>"; @endphp
                 </div>
                 
             </div>

@@ -143,47 +143,29 @@ $primary-color: #079ad9;
 
 // 申し込みボタン
 
-a.btn--green {
+div.btn--green {
   color: #fff;
-  background-color: #094;
-  width: 500px;
+  background-color: #fff;
+  width: 240px;
   height: 50px;
+  font-weight: bold;
 }
 
-a.btn--green:hover {
+div.btn--green:hover {
   color: #fff;
-  background: #00a349;
+  background: #fff;
 }
 
-a.btn--green.btn--cubic {
-  border-bottom: 5px solid #00662d;
-}
-
-a.btn--green.btn--cubic:hover {
+div.btn--green.btn--cubic:hover {
   margin-top: 3px;
-  border-bottom: 2px solid #00662d;
+  border-bottom: 2px solid #fff;
 }
 
-a.btn-c {
+div.btn-c {
   font-size: 20px;
   position: relative;
   padding: 6px 20px 6px 20px;
   border-radius: 100vh;
 }
 
-a.btn-c i.fa {
-  margin-right: 1rem;
-}
-
-a.btn-c:before {
-  font-family: 'Font Awesome 5 Free';
-  font-size: 20px;
-  line-height: 1;
-  position: absolute;
-  top: calc(50% - .8rem);
-  right: 1rem;
-  margin: 0;
-  padding: 0;
-  content: '\f054';
-}
 

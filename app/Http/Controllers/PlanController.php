@@ -70,11 +70,16 @@ class PlanController extends Controller
             $query->where('carrier', '=', $search_carrier)->get();
         }
         
-        
-
         //1ページ10件でページネーションを追加　（orderBy()を使用し、plansを昇順で表示）
-        $plans = $query->orderBy('id', 'asc')->paginate(5);
-
+        $plans = $query->orderBy('fee', 'asc')->paginate(5);
+        
+        //URL取得時にURLを指定してリダイレクト先を指定する。
+        if (empty($plans->id)){
+            $alert = "<script type='text/javascript'>alert('この検索結果に合致するプランがありません。');</script>";
+            echo $alert;
+            echo '<script>location.host ;</script>';
+        }
+        
         $request->session()->put("old_capacity", $search_capacity);
         $request->session()->put("old_cost", $search_cost);
         $request->session()->put("old_carrier", $search_carrier);
@@ -83,7 +88,19 @@ class PlanController extends Controller
         $old_cost = $request->session()->get("old_cost");
         $old_carrier = $request->session()->get("old_carrier");
         
-
+        
+        //view(result.blade.php)に変数を渡す
+            $data = [
+              "search_capacity" => $search_capacity,
+              "search_cost" => $search_cost,
+              "search_carrier" =>$search_carrier,
+              "plans" => $plans,
+              "old_capacity" => $old_capacity,
+              "old_cost" => $old_cost,
+              "old_carrier" => $old_carrier,
+        ];
+        return view('/result', $data);
+        
         //こちらはview（search.blade.php）の戻るボタンのための動作
         if ($request->get('back')){
             return redirect('/')->withInput([ 
@@ -92,17 +109,5 @@ class PlanController extends Controller
                 $old_carrier, 
             ]);
         }
-
-        //view(result.blade.php)に変数を渡す
-        $data = [
-            "search_capacity" => $search_capacity,
-            "search_cost" => $search_cost,
-            "search_carrier" =>$search_carrier,
-            "plans" => $plans,
-            "old_capacity" => $old_capacity,
-            "old_cost" => $old_cost,
-            "old_carrier" => $old_carrier,
-        ];
-        return view('/result', $data);
     }
 }
