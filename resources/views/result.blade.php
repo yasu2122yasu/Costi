@@ -20,11 +20,11 @@
                       {{ $plan->plan_name }}
                 </div>
                 <div class="box-content">
-                  ・サービス提供者：{{ $plan->provider }}<br>   
-                  ・料金：{{ $plan->fee }}円<br>
-                  ・通信容量：{{ $plan->GB }}<br>
+                  <!--・サービス提供者：{{ $plan->provider }}<br>   -->
+                  <!--・料金：{{ $plan->fee }}円<br>-->
+                  <!--・通信容量：{{ $plan->GB }}<br>-->
                   ・使用回線：{{ $plan->carrier }}<br>
-                  ・通信制限速度：{{ $plan->limited_speed }}<br>
+                  <!--・通信制限速度：{{ $plan->limited_speed }}<br>-->
                   
                 </div>
                 <div class="btn btn-c btn--green btn--cubic">
