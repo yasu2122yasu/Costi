@@ -10,18 +10,22 @@
 </head>
 <body>
 <div class="text-center mt-6">
-    <h2 class="result-title">おすすめのプラン一覧はこちら！</h2>
     <!-- 検索した条件と一致するプランがあれば表示 --> 
     @foreach($plans as $plan)
+    <h2 class="result-title">おすすめのプラン一覧はこちら！</h2>
     <div class="row mt-3 mb-5" ".w-150">
         <div class="col-md-6 offset-md-3" ".w-120">        
             <div class="box30">
                 <div class="box-title">
-                      {{$plan->id}} . {{ $plan->plan_name }}
+                      {{ $plan->plan_name }}
                 </div>
                 <div class="box-content">
+                  ・サービス提供者：{{ $plan->provider }}<br>   
                   ・料金：{{ $plan->fee }}円<br>
+                  ・通信容量：{{ $plan->GB }}<br>
                   ・使用回線：{{ $plan->carrier }}<br>
+                  ・通信制限速度：{{ $plan->limited_speed }}<br>
+                  
                 </div>
                 <div class="btn btn-c btn--green btn--cubic">
                   @php echo "<a class href='".$plan['url']."'>お申し込みはこちら</a>"; @endphp
@@ -35,30 +39,33 @@
     <!-- 一致する条件がなければ、次の要件を出す -->
     @if($plans->isEmpty())
         <div class="text-center mt-5">
-            <p class="mt-4">{{ "お探しのプランはありませんでした。他の検索条件を試してみてください。" }}</p>
+            <h2 class="mt-4 result-title">{{ "お探しのプランはありませんでしたが、ahamoがオススメです。" }}</h2>
+            <div class="row mt-3 mb-5" ".w-150">
+       　　　　 <div class="col-md-6 offset-md-3" ".w-120">  
+           　　　 <div class="box30">
+              　  <div class="box-title">
+                      ahamo
+              　  </div>
+              　  <div class="box-content">
+                  ・サービス提供者：NTTドコモ<br>   
+                  ・料金：2970円<br>
+                  ・通信容量：20GB<br>
+                  ・使用回線：大手キャリア<br>
+                  ・通信制限速度：1Mbps<br>
+                  
+                </div>
+                <div class="btn btn-c btn--green btn--cubic">
+                  @php echo "<a class href='https://ahamo.com/plan/'>お申し込みはこちら</a>"; @endphp
+                </div>
+                
+            </div>
+        </div>
+    </div>
         </div>
     @endif
-    
-    <div class="row justify-content-center mb-3">
-        <a class="btn btn-danger" href= "https://px.a8.net/svt/ejp?a8mat=3NJ0BW+EMWN5E+4TIO+5Z6WX" style="color: white;">5分間無料通話&20GBのahamoのお申し込みはこちら！</a>
-    </div>
-    
-    <div class="row justify-content-center mb-3">
-        <a class="btn btn-primary" href="https://h.accesstrade.net/sp/cc?rk=0100ohcq00lxzp" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">格安SIMのHISモバイル公式サイトをこちら！</a>
-    </div>
-            
-    <div class="row justify-content-center mb-3">
-        <a class="btn btn-secondary" href="https://www.linemo.jp/">LINEMOのお申し込みはこちらから！</a>
-    </div>
-            
-    <div class="row justify-content-center mb-3">
-        <a class="btn btn-secondary" href="https://network.mobile.rakuten.co.jp/">楽天モバイルのお申し込みはこちらから！</a>
-    </div>
-            
-
 
     <div class="row justify-content-center mb-3">
-        <a class="btn btn-light" href="/" name="back" style="color: black;">検索画面へ戻る</a>
+        <a class="btn bg-danger" href="/" name="back" >検索画面へ戻る</a>
     </div>
 </body>
 </html>

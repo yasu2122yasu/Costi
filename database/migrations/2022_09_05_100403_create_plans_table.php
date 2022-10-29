@@ -11,6 +11,9 @@ class CreatePlansTable extends Migration
         Schema::create('plans', function (Blueprint $table) {
             $table->increments('id');  //プランID
             $table->string('plan_name', 255);  //提供プラン、50文字以内
+            $table->string('provider', 100);
+            $table->string('limited_speed', 100);
+            $table->string('GB', 100);
             $table->integer('capacity');  
             $table->integer('cost');  //スマホ料金を絞りこむ
             $table->integer('fee');  //実際のスマホ料金
@@ -19,7 +22,6 @@ class CreatePlansTable extends Migration
             $table->SoftDeletes();   //論理削除
             $table->timestamp('created_at')->useCurrent()->nullable();
             $table->timestamp('updated_at')->useCurrent()->nullable();
-            
         });
     }
 
