@@ -3,7 +3,6 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
 class DatabaseSeeder extends Seeder
 {
@@ -12,6 +11,7 @@ class DatabaseSeeder extends Seeder
      *
      * @return void
      */
+<<<<<<< HEAD
      public function run()
    {
        
@@ -692,5 +692,12 @@ class DatabaseSeeder extends Seeder
             'carrier' => 2,
         ]);
         
+=======
+    public function run()
+    {
+        $this->call([
+        SearchTabaleSeeder::class,
+    ]);
+>>>>>>> 20c6a98 (検索結果に料金を追加)
     }
 }
