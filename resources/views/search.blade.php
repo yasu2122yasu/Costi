@@ -93,7 +93,7 @@
             <div class="radio-tile-group">
               
               <div class="input-container">
-                <input class="radio-button" type="radio" id="carrier" name="carrier" value="大手キャリア" @if(isset($old_carrier) && (int)$old_carrier == "大手キャリア") checked @endif>
+                <input class="radio-button" type="radio" id="carrier" name="carrier" value="大手キャリア" @if(isset($old_carrier) && (int)$old_carrier == 1) checked @endif>
                 <div class="radio-tile">
                   <div class="fas fa-building fa-2x">
                   </div>
@@ -102,7 +102,7 @@
               </div>
               
               <div class="input-container">
-                <input class="radio-button" type="radio" id="carrier" name="carrier" value="MVNO" @if(isset($old_carrier) && (int)$old_carrier == "MNNO) checked @endif>
+                <input class="radio-button" type="radio" id="carrier" name="carrier" value="MVNO" @if(isset($old_carrier) && (int)$old_carrier == 2) checked @endif>
                 <div class="radio-tile">
                   <div class="	fab fa-battle-net fa-2x"></div>
                 <label for="carrier" class="radio-tile-label ">いいえ</label>
