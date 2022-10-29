@@ -9,223 +9,223 @@ class DatabaseSeeder extends Seeder
         //プラン1
         DB::table('plans')->insert([
             'plan_name' => "LINEMO ミニプラン",
-            'provider' => "LINEMO",
-            'limited_speed' => "300kbps",
-            'GB' => "3GB",
             'capacity' => 1,
             'cost' => 1,
             'fee' => 980,
             'carrier' => 1,
-            'url' => "https://www.linemo.jp/plan/",
+            // 'provider' => "LINEMO",
+            // 'limited_speed' => "300kbps",
+            // 'GB' => "3GB",
+            // 'url' => "https://www.linemo.jp/plan/",
         ]);
         
-        //プラン2
-        DB::table('plans')->insert([
-            'plan_name' => "povo2.0 データ追加3GB",
-            'provider' => "povo2.0",
-            'limited_speed' => "128kbps",
-            'GB' => "3GB",
-            'capacity' => 1,
-            'cost' => 1,
-            'fee' => 980,
-            'carrier' => 1,
-            'url' => "https://povo.jp/spec/"
-        ]);
+        // //プラン2
+        // DB::table('plans')->insert([
+        //     'plan_name' => "povo2.0 データ追加3GB",
+        //     'provider' => "povo2.0",
+        //     'limited_speed' => "128kbps",
+        //     'GB' => "3GB",
+        //     'capacity' => 1,
+        //     'cost' => 1,
+        //     'fee' => 980,
+        //     'carrier' => 1,
+        //     'url' => "https://povo.jp/spec/"
+        // ]);
         
-        //プラン3、楽天モバイルを3GB未満で使った場合
-        DB::table('plans')->insert([
-            'plan_name' => "Rakuten UN-LIMIT Ⅶ",
-            'provider' => "楽天モバイル",
-            'limited_speed' => "上位料金に変更",
-            'GB' => "3GB",
-            'capacity' => 1,
-            'cost' => 2,
-            'fee' => 1078,
-            'carrier' => 2,
-            'url' => "https://network.mobile.rakuten.co.jp/fee/un-limit/"
-        ]);
+        // //プラン3、楽天モバイルを3GB未満で使った場合
+        // DB::table('plans')->insert([
+        //     'plan_name' => "Rakuten UN-LIMIT Ⅶ",
+        //     'provider' => "楽天モバイル",
+        //     'limited_speed' => "上位料金に変更",
+        //     'GB' => "3GB",
+        //     'capacity' => 1,
+        //     'cost' => 2,
+        //     'fee' => 1078,
+        //     'carrier' => 2,
+        //     'url' => "https://network.mobile.rakuten.co.jp/fee/un-limit/"
+        // ]);
         
-        //プラン4、楽天モバイルを20GB未満で使った場合
-        DB::table('plans')->insert([
-            'plan_name' => "楽天モバイル（3~20GB）",
-            'provider' => "楽天モバイル",
-            'limited_speed' => "上位料金に変更",
-            'GB' => "20GB",
-            'capacity' => 2,
-            'cost' => 2,
-            'fee' => 2178,
-            'carrier' => 2,
-            'url' => "https://network.mobile.rakuten.co.jp/fee/un-limit/"
-        ]);
+        // //プラン4、楽天モバイルを20GB未満で使った場合
+        // DB::table('plans')->insert([
+        //     'plan_name' => "楽天モバイル（3~20GB）",
+        //     'provider' => "楽天モバイル",
+        //     'limited_speed' => "上位料金に変更",
+        //     'GB' => "20GB",
+        //     'capacity' => 2,
+        //     'cost' => 2,
+        //     'fee' => 2178,
+        //     'carrier' => 2,
+        //     'url' => "https://network.mobile.rakuten.co.jp/fee/un-limit/"
+        // ]);
         
-        //プラン5、楽天モバイルを20GB以上で使った場合
-        DB::table('plans')->insert([
-            'plan_name' => "楽天モバイル（20GB以上）",
-            'provider' => "楽天モバイル",
-            'limited_speed' => "無制限のため制限速度なし",
-            'GB' => "無制限",
-            'capacity' => 3,
-            'cost' => 3,
-            'fee' => 3278,
-            'carrier' => 2,
-            'url' => "https://network.mobile.rakuten.co.jp/fee/un-limit/"
-        ]);
+        // //プラン5、楽天モバイルを20GB以上で使った場合
+        // DB::table('plans')->insert([
+        //     'plan_name' => "楽天モバイル（20GB以上）",
+        //     'provider' => "楽天モバイル",
+        //     'limited_speed' => "無制限のため制限速度なし",
+        //     'GB' => "無制限",
+        //     'capacity' => 3,
+        //     'cost' => 3,
+        //     'fee' => 3278,
+        //     'carrier' => 2,
+        //     'url' => "https://network.mobile.rakuten.co.jp/fee/un-limit/"
+        // ]);
         
-        //プラン6、日本通信　合理的シンプル290プラン
-        DB::table('plans')->insert([
-            'plan_name' => "合理的シンプル290プラン",
-            'provider' => "日本通信",
-            'limited_speed' => "公式サイト以外アクセス不可",
-            'GB' => "1GB",
-            'capacity' => 1,
-            'cost' => 1,
-            'fee' => 290,
-            'carrier' => 2,
-            'url' => "https://www.nihontsushin.com/service/"
-        ]);
+        // //プラン6、日本通信　合理的シンプル290プラン
+        // DB::table('plans')->insert([
+        //     'plan_name' => "合理的シンプル290プラン",
+        //     'provider' => "日本通信",
+        //     'limited_speed' => "公式サイト以外アクセス不可",
+        //     'GB' => "1GB",
+        //     'capacity' => 1,
+        //     'cost' => 1,
+        //     'fee' => 290,
+        //     'carrier' => 2,
+        //     'url' => "https://www.nihontsushin.com/service/"
+        // ]);
         
-        //プラン7、HISモバイル 自由自在290プラン
-        DB::table('plans')->insert([
-            'plan_name' => "自由自在290プラン",
-            'provider' => "HISモバイル",
-            'limited_speed' => "128kbps",
-            'GB' => "1GB",
-            'capacity' => 1,
-            'cost' => 1,
-            'fee' => 550,
-            'carrier' => 2,
-            'url' => "https://his-mobile.com/domestic/planlp_2022splan"
-        ]);
+        // //プラン7、HISモバイル 自由自在290プラン
+        // DB::table('plans')->insert([
+        //     'plan_name' => "自由自在290プラン",
+        //     'provider' => "HISモバイル",
+        //     'limited_speed' => "128kbps",
+        //     'GB' => "1GB",
+        //     'capacity' => 1,
+        //     'cost' => 1,
+        //     'fee' => 550,
+        //     'carrier' => 2,
+        //     'url' => "https://his-mobile.com/domestic/planlp_2022splan"
+        // ]);
         
-        //プラン8 IIjmio(2ギガプラン)
-        DB::table('plans')->insert([
-            'plan_name' => "IIjmio（2ギガプラン）",
-            'provider' => "IIjmio",
-            'limited_speed' => "300kbps",
-            'GB' => "2GB",
-            'capacity' => 1,
-            'cost' => 1,
-            'fee' => 850,
-            'carrier' => "2",
-            'url' => "https://www.iijmio.jp/hdc/spec/"
-        ]);
+        // //プラン8 IIjmio(2ギガプラン)
+        // DB::table('plans')->insert([
+        //     'plan_name' => "IIjmio（2ギガプラン）",
+        //     'provider' => "IIjmio",
+        //     'limited_speed' => "300kbps",
+        //     'GB' => "2GB",
+        //     'capacity' => 1,
+        //     'cost' => 1,
+        //     'fee' => 850,
+        //     'carrier' => "2",
+        //     'url' => "https://www.iijmio.jp/hdc/spec/"
+        // ]);
         
-        //プラン9 IIjmio（4ギガプラン）990円
-        DB::table('plans')->insert([
-            'plan_name' => "IIjmio（4ギガプラン）",
-            'provider' => "IIjmio",
-            'limited_speed' => "300kbps",
-            'GB' => "4GB",
-            'capacity' => 1,
-            'cost' => 1,
-            'fee' => 990,
-            'carrier' => 2,
-            'url' => "https://www.iijmio.jp/hdc/spec/"
-        ]);
+        // //プラン9 IIjmio（4ギガプラン）990円
+        // DB::table('plans')->insert([
+        //     'plan_name' => "IIjmio（4ギガプラン）",
+        //     'provider' => "IIjmio",
+        //     'limited_speed' => "300kbps",
+        //     'GB' => "4GB",
+        //     'capacity' => 1,
+        //     'cost' => 1,
+        //     'fee' => 990,
+        //     'carrier' => 2,
+        //     'url' => "https://www.iijmio.jp/hdc/spec/"
+        // ]);
         
-        //プラン10 LINEMO スマホプラン 2728円
-        DB::table('plans')->insert([
-            'plan_name' => "LINEMO スマホプラン",
-            'provider' => "LINEMO",
-            'limited_speed' => "1Mbps",
-            'GB' => "20GB",
-            'capacity' => 2,
-            'cost' => 2,
-            'fee' => 2728,
-            'carrier' => 1,
-            'url' => "https://www.linemo.jp/plan/",
-        ]);
+        // //プラン10 LINEMO スマホプラン 2728円
+        // DB::table('plans')->insert([
+        //     'plan_name' => "LINEMO スマホプラン",
+        //     'provider' => "LINEMO",
+        //     'limited_speed' => "1Mbps",
+        //     'GB' => "20GB",
+        //     'capacity' => 2,
+        //     'cost' => 2,
+        //     'fee' => 2728,
+        //     'carrier' => 1,
+        //     'url' => "https://www.linemo.jp/plan/",
+        // ]);
         
-        //プラン11 povo2.0 データ追加
-        DB::table('plans')->insert([
-            'plan_name' => "povo2.0 データ追加20GB",
-            'provider' => "povo2.0",
-            'limited_speed' => "128kbps",
-            'GB' => "20GB",
-            'capacity' => 2,
-            'cost' => 2,
-            'fee' => 2700,
-            'carrier' => 1,
-            'url' => "https://povo.jp/spec/"
-        ]);
+        // //プラン11 povo2.0 データ追加
+        // DB::table('plans')->insert([
+        //     'plan_name' => "povo2.0 データ追加20GB",
+        //     'provider' => "povo2.0",
+        //     'limited_speed' => "128kbps",
+        //     'GB' => "20GB",
+        //     'capacity' => 2,
+        //     'cost' => 2,
+        //     'fee' => 2700,
+        //     'carrier' => 1,
+        //     'url' => "https://povo.jp/spec/"
+        // ]);
         
-        //プラン12 イオンモバイル
-        DB::table('plans')->insert([
-            'plan_name' => "さいてきプラン MORIMORI",
-            'provider' => "イオンモバイル",
-            'limited_speed' => "200kbps",
-            'GB' => "20GB",
-            'capacity' => 2,
-            'cost' => 2,
-            'fee' => 1958,
-            'carrier' => 2,
-            'url' => "https://aeonmobile.jp/plan/"
-        ]);
+        // //プラン12 イオンモバイル
+        // DB::table('plans')->insert([
+        //     'plan_name' => "さいてきプラン MORIMORI",
+        //     'provider' => "イオンモバイル",
+        //     'limited_speed' => "200kbps",
+        //     'GB' => "20GB",
+        //     'capacity' => 2,
+        //     'cost' => 2,
+        //     'fee' => 1958,
+        //     'carrier' => 2,
+        //     'url' => "https://aeonmobile.jp/plan/"
+        // ]);
         
-        //プラン13 IIJmio（20ギガプラン）2,000円
-        DB::table('plans')->insert([
-            'plan_name' => "IIJmio（20ギガプラン）",
-            'provider' => "IIJmio",
-            'limited_speed' => "300kbps",
-            'GB' => "20",
-            'capacity' => 2,
-            'cost' => 2,
-            'fee' => 2000,
-            'carrier' => 2,
-            'url' => "https://www.iijmio.jp/hdc/spec/"
-        ]);
+        // //プラン13 IIJmio（20ギガプラン）2,000円
+        // DB::table('plans')->insert([
+        //     'plan_name' => "IIJmio（20ギガプラン）",
+        //     'provider' => "IIJmio",
+        //     'limited_speed' => "300kbps",
+        //     'GB' => "20",
+        //     'capacity' => 2,
+        //     'cost' => 2,
+        //     'fee' => 2000,
+        //     'carrier' => 2,
+        //     'url' => "https://www.iijmio.jp/hdc/spec/"
+        // ]);
         
-        //プラン14 ahamo
-        DB::table('plans')->insert([
-            'plan_name' => "ahamo",
-            'provider' => "NTTドコモ",
-            'limited_speed' => "1Mbps",
-            'GB' => "20",
-            'capacity' => 2,
-            'cost' => 2,
-            'fee' => 2970,
-            'carrier' => 1,
-            'url' => "https://ahamo.com/plan/"
-        ]);
+        // //プラン14 ahamo
+        // DB::table('plans')->insert([
+        //     'plan_name' => "ahamo",
+        //     'provider' => "NTTドコモ",
+        //     'limited_speed' => "1Mbps",
+        //     'GB' => "20",
+        //     'capacity' => 2,
+        //     'cost' => 2,
+        //     'fee' => 2970,
+        //     'carrier' => 1,
+        //     'url' => "https://ahamo.com/plan/"
+        // ]);
         
-        //プラン15 ahamo 大盛り
-        DB::table('plans')->insert([
-            'plan_name' => "ahamo 大盛り",
-            'provider' => "NTTドコモ",
-            'limited_speed' => "1Mbps",
-            'GB' => "100",
-            'capacity' => 3,
-            'cost' => 3,
-            'fee' => 4950,
-            'carrier' => 1,
-            'url' => "https://ahamo.com/plan/"
-        ]);
+        // //プラン15 ahamo 大盛り
+        // DB::table('plans')->insert([
+        //     'plan_name' => "ahamo 大盛り",
+        //     'provider' => "NTTドコモ",
+        //     'limited_speed' => "1Mbps",
+        //     'GB' => "100",
+        //     'capacity' => 3,
+        //     'cost' => 3,
+        //     'fee' => 4950,
+        //     'carrier' => 1,
+        //     'url' => "https://ahamo.com/plan/"
+        // ]);
         
-        //プラン16 ドコモ 5Gギガホプレミア
-        DB::table('plans')->insert([
-            'plan_name' => "ドコモ 5Gギガホプレミア",
-            'provider' => "NTTドコモ",
-            'limited_speed' => "無制限のため制限速度なし",
-            'GB' => "無制限",
-            'capacity' => 3,
-            'cost' => 3,
-            'fee' => 7315,
-            'carrier' => 1,
-            'url' => "https://www.docomo.ne.jp/charge/5g-gigaho-premier/?icid=CRP_CHA_promotion_eraberu_to_CRP_CHA_5g-gigaho-premier"
-        ]);
+        // //プラン16 ドコモ 5Gギガホプレミア
+        // DB::table('plans')->insert([
+        //     'plan_name' => "ドコモ 5Gギガホプレミア",
+        //     'provider' => "NTTドコモ",
+        //     'limited_speed' => "無制限のため制限速度なし",
+        //     'GB' => "無制限",
+        //     'capacity' => 3,
+        //     'cost' => 3,
+        //     'fee' => 7315,
+        //     'carrier' => 1,
+        //     'url' => "https://www.docomo.ne.jp/charge/5g-gigaho-premier/?icid=CRP_CHA_promotion_eraberu_to_CRP_CHA_5g-gigaho-premier"
+        // ]);
         
-        //プラン17 au 使い放題MAX 7,328円
-        DB::table('plans')->insert([
-            'plan_name' => "au 使い放題MAX",
-            'provider' => "au",
-            'limited_speed' => "無制限のため制限速度なし",
-            'GB' => "無制限",
-            'capacity' => 3,    
-            'cost' => 3,
-            'fee' => 7328,
-            'carrier' => 1,
-            'url' => "https://www.au.com/mobile/charge/smartphone/plan/data-unlimited/"
-        ]);
+        // //プラン17 au 使い放題MAX 7,328円
+        // DB::table('plans')->insert([
+        //     'plan_name' => "au 使い放題MAX",
+        //     'provider' => "au",
+        //     'limited_speed' => "無制限のため制限速度なし",
+        //     'GB' => "無制限",
+        //     'capacity' => 3,    
+        //     'cost' => 3,
+        //     'fee' => 7328,
+        //     'carrier' => 1,
+        //     'url' => "https://www.au.com/mobile/charge/smartphone/plan/data-unlimited/"
+        // ]);
         
         // //プラン18 ソフトバンク メリハリ無制限 7,238円
         // DB::table('plans')->insert([
