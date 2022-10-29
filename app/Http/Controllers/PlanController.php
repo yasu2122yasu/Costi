@@ -66,7 +66,7 @@ class PlanController extends Controller
         }
         
         if (!is_null($search_carrier)) {
-            $query->where('carrier', '=', $search_carrier)->get();
+            $query->where('carrier', '=', '$search_carrier')->get();
         }
         
         //1ページ5件でページネーションを追加　（orderBy()を使用し、plansを昇順で表示）

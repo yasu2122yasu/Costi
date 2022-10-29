@@ -9,8 +9,8 @@ class CreatePlansTable extends Migration
     public function up()
     {
         Schema::create('plans', function (Blueprint $table) {
-            $table->increments('id');  //プランID
-            $table->string('plan_name', 255);  //提供プラン、50文字以内
+            $table->increments('id');
+            $table->string('plan_name', 255);  
             $table->string('provider', 100);
             $table->string('limited_speed', 100);
             $table->string('GB', 100);
