@@ -59,7 +59,6 @@ class PlanController extends Controller
         //dbの$capacity とアプリ側の $capacity が一致していれば取得
         if (!is_null($search_capacity)) {
             $query->where('capacity', '=', $search_capacity)->get();
-
         }
         
         if (!is_null($search_cost)) {
@@ -71,14 +70,9 @@ class PlanController extends Controller
         }
         
         //1ページ10件でページネーションを追加　（orderBy()を使用し、plansを昇順で表示）
+        if (!is_null($query)){
         $plans = $query->orderBy('fee', 'asc')->paginate(5);
-        
-        //URL取得時にURLを指定してリダイレクト先を指定する。
-        // if (empty($plans->id)){
-        //     $alert = "<script type='text/javascript'>alert('この検索結果に合致するプランがありません。');</script>";
-        //     echo $alert;
-        //     echo '<script>location.host ;</script>';
-        // }
+        }
         
         $request->session()->put("old_capacity", $search_capacity);
         $request->session()->put("old_cost", $search_cost);
