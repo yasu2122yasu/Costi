@@ -54,9 +54,8 @@
                   ・提供会社：NTTドコモ<br>
                 </div>
                 <div class="btn btn-c btn--green btn--cubic">
-                  @php echo "<a class href="https://px.a8.net/svt/ejp?a8mat=3NJ0BW+EMWN5E+4TIO+5Z6WX">お問合せはこちら</a>"; @endphp
+                  <a href="https://px.a8.net/svt/ejp?a8mat=3NJ0BW+EMWN5E+4TIO+5Z6WX">お問合せはこちら</a>
                 </div>
-                
             </div>
           </div>
         </div>
