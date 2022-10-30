@@ -81,6 +81,7 @@
     @endif
 
     <div class="row justify-content-center mb-3">
+        <p>※割引等は考慮していません</p>
         <a class="btn btn-light" href="/" name="back" style="color: black;">検索画面へ戻る</a>
     </div>
 </body>
