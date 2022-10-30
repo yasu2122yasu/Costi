@@ -10,8 +10,8 @@
 </head>
 <body>
 <div class="text-center mt-6">
-    <h2 class="result-title">おすすめのプラン一覧はこちら！</h2>
     <!-- 検索した条件と一致するプランがあれば表示 --> 
+    <h2 class="result-title">おすすめのプラン一覧はこちら！</h2>
     @foreach($plans as $plan)
     <div class="row mt-3 mb-5" ".w-150">
         <div class="col-md-6 offset-md-3" ".w-120">        
@@ -37,9 +37,7 @@
 
     <!-- 一致する条件がなければ、次の要件を出す -->
     @if($plans->isEmpty())
-        <div class="text-center mt-5">
-            <p class="mt-4">{{ "条件に合うプランはありませんでしたが、あなたにはahamoがオススメです。" }}</p>
-        </div>
+        <h2 class="result-title">あなたに合うプランはありませんでしたが、ahamoが人気です！</h2>
         <div class="row mt-3 mb-5" ".w-150">
           <div class="col-md-6 offset-md-3" ".w-120">        
             <div class="box30">
@@ -54,7 +52,7 @@
                   ・提供会社：NTTドコモ<br>
                 </div>
                 <div class="btn btn-c btn--green btn--cubic">
-                  <a href="https://px.a8.net/svt/ejp?a8mat=3NJ0BW+EMWN5E+4TIO+5Z6WX">お問合せはこちら</a>
+                  <a href="https://px.a8.net/svt/ejp?a8mat=3NJ0BW+EMWN5E+4TIO+5Z6WX">お問合せはこちら</a>"; 
                 </div>
             </div>
           </div>
