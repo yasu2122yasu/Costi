@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 1,
             'cost' => 1,
             'fee' => 980,
+            'carrier_flag' => 1,
             'carrier' => "大手キャリア",
             'url' => "https://www.linemo.jp/plan/",
         ]);
@@ -28,6 +29,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 1,
             'cost' => 1,
             'fee' => 980,
+            'carrier_flag' => 1,
             'carrier' => "大手キャリア",
             'url' => "https://povo.jp/spec/"
         ]);
@@ -41,6 +43,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 1,
             'cost' => 2,
             'fee' => 1078,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://network.mobile.rakuten.co.jp/fee/un-limit/"
         ]);
@@ -54,6 +57,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 2,
             'cost' => 2,
             'fee' => 2178,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://network.mobile.rakuten.co.jp/fee/un-limit/"
         ]);
@@ -67,6 +71,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 3,
             'cost' => 3,
             'fee' => 3278,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://network.mobile.rakuten.co.jp/fee/un-limit/"
         ]);
@@ -80,6 +85,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 1,
             'cost' => 1,
             'fee' => 290,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://www.nihontsushin.com/service/"
         ]);
@@ -93,6 +99,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 1,
             'cost' => 1,
             'fee' => 550,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://his-mobile.com/domestic/planlp_2022splan"
         ]);
@@ -106,6 +113,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 1,
             'cost' => 1,
             'fee' => 850,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://www.iijmio.jp/hdc/spec/"
         ]);
@@ -119,6 +127,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 1,
             'cost' => 1,
             'fee' => 990,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://www.iijmio.jp/hdc/spec/"
         ]);
@@ -132,6 +141,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 2,
             'cost' => 2,
             'fee' => 2728,
+            'carrier_flag' => 1,
             'carrier' => "大手キャリア",
             'url' => "https://www.linemo.jp/plan/",
         ]);
@@ -145,6 +155,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 2,
             'cost' => 2,
             'fee' => 2700,
+            'carrier_flag' => 1,
             'carrier' => "大手キャリア",
             'url' => "https://povo.jp/spec/"
         ]);
@@ -158,6 +169,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 2,
             'cost' => 2,
             'fee' => 1958,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://aeonmobile.jp/plan/"
         ]);
@@ -171,6 +183,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 2,
             'cost' => 2,
             'fee' => 2000,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://www.iijmio.jp/hdc/spec/"
         ]);
@@ -184,6 +197,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 2,
             'cost' => 2,
             'fee' => 2970,
+            'carrier_flag' => 1,
             'carrier' => "大手キャリア",
             'url' => "https://ahamo.com/plan/"
         ]);
@@ -197,6 +211,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 3,
             'cost' => 3,
             'fee' => 4950,
+            'carrier_flag' => 1,
             'carrier' => "大手キャリア",
             'url' => "https://ahamo.com/plan/"
         ]);
@@ -210,6 +225,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 3,
             'cost' => 3,
             'fee' => 7315,
+            'carrier_flag' => 1,
             'carrier' => "大手キャリア",
             'url' => "https://www.docomo.ne.jp/charge/5g-gigaho-premier/?icid=CRP_CHA_promotion_eraberu_to_CRP_CHA_5g-gigaho-premier"
         ]);
@@ -223,6 +239,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 3,    
             'cost' => 3,
             'fee' => 7328,
+            'carrier_flag' => 1,
             'carrier' => "大手キャリア",
             'url' => "https://www.au.com/mobile/charge/smartphone/plan/data-unlimited/"
         ]);
@@ -236,6 +253,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 3,
             'cost' => 3,
             'fee' => 7328,
+            'carrier_flag' => 1,
             'carrier' => "大手キャリア",
             'url' => "https://www.softbank.jp/mobile/price_plan/data/merihari-unlimited/"
         ]);
@@ -249,6 +267,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 1,
             'cost' => 3,
             'fee' => 4565,
+            'carrier_flag' => 1,
             'carrier' => "大手キャリア",
             'url' => "https://www.docomo.ne.jp/charge/gigalite-2/"
         ]);
@@ -262,6 +281,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 2,
             'cost' => 3,
             'fee' => 6765,
+            'carrier_flag' => 1,
             'carrier' => "大手キャリア",
             'url' => "https://www.docomo.ne.jp/charge/gigalite-2/"
         ]);
@@ -275,6 +295,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 1,
             'cost' => 3,
             'fee' => 3278,
+            'carrier_flag' => 1,
             'carrier' => "大手キャリア",
             'url' => "https://www.softbank.jp/mobile/price_plan/data/minifit-plan-plus/"
         ]);
@@ -288,6 +309,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 1,
             'cost' => 3,
             'fee' => 4378,
+            'carrier_flag' => 1,
             'carrier' => "大手キャリア",
             'url' => "https://www.softbank.jp/mobile/price_plan/data/minifit-plan-plus/"
         ]);
@@ -301,6 +323,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 1,
             'cost' => 3,
             'fee' => 5478,
+            'carrier_flag' => 1,
             'carrier' => "大手キャリア",
             'url' => "https://www.softbank.jp/mobile/price_plan/data/minifit-plan-plus/"
         ]);
@@ -314,6 +337,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 1,    
             'cost' => 3,
             'fee' => 3278,
+            'carrier_flag' => 1,
             'carrier' => "大手キャリア",
             'url' => "https://www.au.com/mobile/charge/application-ended/pitatto/"
         ]);
@@ -327,6 +351,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 1,    
             'cost' => 3,
             'fee' => 4378,
+            'carrier_flag' => 1,
             'carrier' => "大手キャリア",
             'url' => "https://www.au.com/mobile/charge/application-ended/pitatto/"
         ]);
@@ -340,6 +365,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 1,    
             'cost' => 3,
             'fee' => 4928,
+            'carrier_flag' => 1,
             'carrier' => "大手キャリア",
             'url' => "https://www.au.com/mobile/charge/application-ended/pitatto/"
         ]);
@@ -353,6 +379,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 2,    
             'cost' => 3,
             'fee' => 6028,
+            'carrier_flag' => 1,
             'carrier' => "大手キャリア",
             'url' => "https://www.au.com/mobile/charge/application-ended/pitatto/"
         ]);
@@ -366,6 +393,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 2,    
             'cost' => 3,
             'fee' => 7128,
+            'carrier_flag' => 1,
             'carrier' => "大手キャリア",
             'url' => "https://www.au.com/mobile/charge/application-ended/pitatto/"
         ]);
@@ -381,6 +409,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 3,    
             'cost' => 3,
             'fee' => 3058,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://aeonmobile.jp/plan/"
         ]);
@@ -394,6 +423,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 3,    
             'cost' => 3,
             'fee' => 4158,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://aeonmobile.jp/plan/"
         ]);
@@ -407,6 +437,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 3,    
             'cost' => 3,
             'fee' => 5258,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://aeonmobile.jp/plan/"
         ]);
@@ -420,6 +451,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 3,    
             'cost' => 3,
             'fee' => 5990,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://aeonmobile.jp/plan/"
         ]);
@@ -433,6 +465,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 2,    
             'cost' => 2,
             'fee' => 1390,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://www.nihontsushin.com/plan/planminna.html"
         ]);
@@ -446,6 +479,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 2,    
             'cost' => 2,
             'fee' => 2178,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://www.nihontsushin.com/plan/plan20gb.html"
         ]);
@@ -459,6 +493,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 1,    
             'cost' => 2,
             'fee' => 1298,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://mineo.jp/mypita/"
         ]);
@@ -472,6 +507,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 2,    
             'cost' => 2,
             'fee' => 1518,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://mineo.jp/mypita/"
         ]);
@@ -485,6 +521,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 2,    
             'cost' => 2,
             'fee' => 1958,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://mineo.jp/mypita/"
         ]);
@@ -498,6 +535,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 2,    
             'cost' => 2,
             'fee' => 2178,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://mineo.jp/mypita/"
         ]);
@@ -511,6 +549,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 3,    
             'cost' => 2,
             'fee' => 2728,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://mineo.jp/mypita/"
         ]);
@@ -524,6 +563,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 1,    
             'cost' => 2,
             'fee' => 1078,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://join.biglobe.ne.jp/mobile/plan/?cl=head_mobile_plan"
         ]);
@@ -537,6 +577,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 1,    
             'cost' => 2,
             'fee' => 1320,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://join.biglobe.ne.jp/mobile/plan/?cl=head_mobile_plan"
         ]);
@@ -550,6 +591,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 2,    
             'cost' => 2,
             'fee' => 1078,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://join.biglobe.ne.jp/mobile/plan/?cl=head_mobile_plan"
         ]);
@@ -563,6 +605,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 1,    
             'cost' => 2,
             'fee' => 2178,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://www.ymobile.jp/plan/smartphone/"
         ]);
@@ -576,6 +619,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 2,    
             'cost' => 3,
             'fee' => 3278,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://www.ymobile.jp/plan/smartphone/"
         ]);
@@ -589,6 +633,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 3,    
             'cost' => 3,
             'fee' => 4158,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://join.biglobe.ne.jp/mobile/plan/?cl=head_mobile_plan"
         ]);
@@ -602,6 +647,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 1,    
             'cost' => 2,
             'fee' => 1628,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://join.biglobe.ne.jp/mobile/plan/?cl=head_mobile_plan"
         ]);
@@ -615,6 +661,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 2,    
             'cost' => 3,
             'fee' => 2728,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://join.biglobe.ne.jp/mobile/plan/?cl=head_mobile_plan"
         ]);
@@ -627,6 +674,7 @@ class DatabaseSeeder extends Seeder
             'capacity' => 3,
             'cost' => 3,
             'fee' => 3828,
+            'carrier_flag' => 2,
             'carrier' => "MVNO",
             'url' => "https://join.biglobe.ne.jp/mobile/plan/?cl=head_mobile_plan"
         ]);

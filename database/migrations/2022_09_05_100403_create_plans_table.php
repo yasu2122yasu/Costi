@@ -17,8 +17,9 @@ class CreatePlansTable extends Migration
             $table->integer('capacity'); //利用しているスマホプランの容量
             $table->integer('cost');  //スマホ料金
             $table->integer('fee');
-            $table->string('carrier', 100);  //大手キャリアかどうか
-            $table->string('url');  //大手キャリアかどうか
+            $table->integer('carrier_flag'); //大手キャリアかどうか（検索の方）
+            $table->string('carrier');  //大手キャリアかどうか（表示の方）
+            $table->string('url');  
             $table->SoftDeletes();   //論理削除
             $table->timestamp('created_at')->useCurrent()->nullable();
             $table->timestamp('updated_at')->useCurrent()->nullable();
