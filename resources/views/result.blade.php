@@ -11,8 +11,8 @@
 <body>
 <div class="text-center mt-6">
     <!-- 検索した条件と一致するプランがあれば表示 --> 
-    <h2 class="result-title">おすすめのプラン一覧はこちら！</h2>
     @foreach($plans as $plan)
+    <h2 class="result-title">おすすめのプラン一覧はこちら！</h2>
     <div class="row mt-3 mb-5" ".w-150">
         <div class="col-md-6 offset-md-3" ".w-120">        
             <div class="box30">
