@@ -1,12 +1,24 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
 class DatabaseSeeder extends Seeder
 {
+<<<<<<< HEAD
     public function run(){
         //プラン1
+=======
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+<<<<<<< HEAD
+     public function run()
+   {
+       
+      //~1GBパターンのデータ
+>>>>>>> hoge
         DB::table('plans')->insert([
             'plan_name' => "LINEMO ミニプラン",
             'capacity' => 1,
@@ -723,5 +735,12 @@ class DatabaseSeeder extends Seeder
         //     'url' => "https://join.biglobe.ne.jp/mobile/plan/?cl=head_mobile_plan"
         // ]);
         
+=======
+    public function run()
+    {
+        $this->call([
+        SearchTabaleSeeder::class,
+    ]);
+>>>>>>> 20c6a98 (検索結果に料金を追加)
     }
 }

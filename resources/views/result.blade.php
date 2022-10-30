@@ -12,6 +12,7 @@
 <div class="text-center mt-6">
     <!-- 検索した条件と一致するプランがあれば表示 --> 
     @foreach($plans as $plan)
+<<<<<<< HEAD
     <h2 class="result-title">おすすめのプラン一覧はこちら！</h2>
     <div class="row mt-3 mb-5" ".w-150">
         <div class="col-md-6 offset-md-3" ".w-120">        
@@ -31,6 +32,14 @@
                   @php echo "<a class href='".$plan['url']."'>お申し込みはこちら</a>"; @endphp
                 </div>
                 
+=======
+    <div>
+        <div class="m-4 row">
+            <div class="col-10">
+                <h4 class="font-weight-bold positon">
+                    {!! nl2br(e($plan->plan_name)) !!}
+                </h4>
+>>>>>>> hoge
             </div>
         </div>
     </div>
