@@ -50,6 +50,8 @@
                 <label for="capacity" class="radio-tile-label">21GB~</label>
                 </div>
               </div>
+            </div>
+          </div>  
               
           
           <!--料金検索のラジオボタン-->
