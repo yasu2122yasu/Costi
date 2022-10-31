@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>スマホ回線2.0</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
 </head>
   <body>
     <div class="text-center mt-6 search-title" ".w-100">
