@@ -10,8 +10,8 @@
 ・EC2<br>
 ・sass<br>
 <h2>URL</h2>
+http://mobile-save.net/ <br>
 https://ancient-waters-98823.herokuapp.com/
-http://mobile-save.net/
 <h2>改善点</h2>
 <h3>2022.09.21</h3>
 ・ユーザーからのフィードバックをもとにレスポンシブデザインに対応しました。
