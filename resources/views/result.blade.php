@@ -63,7 +63,7 @@
           <div class="col-md-6 offset-md-3" ".w-120">        
             <div class="box30">
                 <div class="box-title">
-                      ahamo
+                      donedone
                 </div>
                 <div class="box-content">
                   ・料金：2728円<br>
