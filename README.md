@@ -11,6 +11,7 @@
 ・sass<br>
 <h2>URL</h2>
 https://ancient-waters-98823.herokuapp.com/
+http://mobile-save.net/
 <h2>改善点</h2>
 <h3>2022.09.21</h3>
 ・ユーザーからのフィードバックをもとにレスポンシブデザインに対応しました。
