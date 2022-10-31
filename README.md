@@ -7,7 +7,7 @@
 ・Laravel<br>
 ・PHP<br>
 ・Bootstrap<br>
-・Heroku<br>
+・EC2<br>
 ・sass<br>
 <h2>URL</h2>
 https://ancient-waters-98823.herokuapp.com/
@@ -18,12 +18,12 @@ https://ancient-waters-98823.herokuapp.com/
 ・視認性の高いデザインに変更しました。
 ・テーブル構造を変更しました。
 <h2>検討事項</h2>
-・Herokuからレンタルサーバー/AWSへの移行<br>
-・フロントエンドにVue.jsの導入（メリットは小さい？）<br>
+・Herokuからレンタルサーバー/AWSへの移行→SSL認証を残して完了<br>
+・フロントエンドにVue.jsの導入（メリットは小さい？）→今回は導入見送り<br>
 ・plansテーブルのカラムを減らすためにリレーションを検討、costとfeeの統合検討<br>
-・検索画面の不具合解消（ワイドモニタ利用時、レイアウトが崩れる）<br>
-・プラン数の増加（目標50)<br>
-・テーブルのカラム数を増やして対応しているものをコントローラーに書き直す<br>
+・検索画面の不具合解消（ワイドモニタ利用時、レイアウトが崩れる）→解消<br>
+・プラン数の増加（目標50)→49プラン導入<br>
+・テーブルのカラム数を増やして対応しているものをコントローラーに書き直す→改善中<br>
 ・割引機能の追加<br>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
