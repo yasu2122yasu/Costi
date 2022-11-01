@@ -10,7 +10,7 @@ class CreatePlansTable extends Migration
     {
         Schema::create('plans', function (Blueprint $table) {
             $table->increments('id');  //プランID
-            $table->string('plan_name', 25);  //提供プラン、50文字以内
+            $table->string('plan_name', 50);  //提供プラン、50文字以内
             $table->string('provider', 100);
             $table->string('limited_speed', 100);
             $table->string('GB', 100);    
