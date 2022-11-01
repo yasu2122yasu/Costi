@@ -36,7 +36,7 @@ class DatabaseSeeder extends Seeder
         
         //プラン3、楽天モバイルを3GB未満で使った場合
         DB::table('plans')->insert([
-            'plan_name' => "Rakuten UN-LIMIT Ⅶ",
+            'plan_name' => "Rakuten UN-LIMIT Ⅶ(3GB未満)",
             'provider' => "楽天モバイル",
             'limited_speed' => "上位料金に変更",
             'GB' => "3GB",
@@ -50,7 +50,7 @@ class DatabaseSeeder extends Seeder
         
         //プラン4、モバイルを20GB未満で使った場合
         DB::table('plans')->insert([
-            'plan_name' => "楽天モバイル（3~20GB）",
+            'plan_name' => "Rakuten UN-LIMIT Ⅶ(3~20GB)",
             'provider' => "楽天モバイル",
             'limited_speed' => "上位料金に変更",
             'GB' => "20GB",
@@ -64,7 +64,7 @@ class DatabaseSeeder extends Seeder
         
         //プラン5、楽天モバイルを20GB以上で使った場合
         DB::table('plans')->insert([
-            'plan_name' => "楽天モバイル（20GB以上）",
+            'plan_name' => "Rakuten UN-LIMIT Ⅶ（20GB以上）",
             'provider' => "楽天モバイル",
             'limited_speed' => "無制限のため制限速度なし",
             'GB' => "無制限",
@@ -451,7 +451,7 @@ class DatabaseSeeder extends Seeder
             'fee' => 5990,
             'carrier_flag' => 2,
             'carrier' => "MVNO",
-            'url' => "https://aeonmobile.jp/plan/"
+            'url' => "https://his-mobile.com/domestic/service"
         ]);
         
         //プラン34 日本通信 みんなのプラン
@@ -549,7 +549,7 @@ class DatabaseSeeder extends Seeder
             'fee' => 2728,
             'carrier_flag' => 2,
             'carrier' => "MVNO",
-            'url' => "https://mineo.jp/mypita/"
+            'url' => "https://www.donedone.jp/"
         ]);
         
         //プラン41 BIGLOBE
