@@ -48,7 +48,7 @@ class DatabaseSeeder extends Seeder
             'url' => "https://network.mobile.rakuten.co.jp/fee/un-limit/"
         ]);
         
-        //プラン4、楽天モバイルを20GB未満で使った場合
+        //プラン4、モバイルを20GB未満で使った場合
         DB::table('plans')->insert([
             'plan_name' => "楽天モバイル（3~20GB）",
             'provider' => "楽天モバイル",
@@ -398,8 +398,6 @@ class DatabaseSeeder extends Seeder
             'url' => "https://www.au.com/mobile/charge/application-ended/pitatto/"
         ]);
         
-        //プラン29 イオンモバイル さいてきプラン MORIMORI
-        
         //プラン30 イオンモバイル さいてきプラン MORIMORI
         DB::table('plans')->insert([
             'plan_name' => "さいてきプラン MORIMORI(~30GB)",
@@ -640,7 +638,7 @@ class DatabaseSeeder extends Seeder
         
         //プラン47 UQモバイル
         DB::table('plans')->insert([
-            'plan_name' => "UQ mobile くりこしプランS",
+            'plan_name' => "くりこしプランS",
             'provider' => "UQ mobile",
             'limited_speed' => "300kbps",
             'GB' => "3GB",
@@ -667,7 +665,7 @@ class DatabaseSeeder extends Seeder
         ]);
         
         DB::table('plans')->insert([
-            'plan_name' => "UQ mobile くりこしプランL",
+            'plan_name' => "くりこしプランL",
             'provider' => "UQ mobile",
             'limited_speed' => "1Mbps",
             'GB' => "25GB",
