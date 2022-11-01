@@ -635,7 +635,7 @@ class DatabaseSeeder extends Seeder
             'fee' => 4158,
             'carrier_flag' => 2,
             'carrier' => "MVNO",
-            'url' => "https://join.biglobe.ne.jp/mobile/plan/?cl=head_mobile_plan"
+            'url' => "https://www.ymobile.jp/plan/smartphone/"
         ]);
         
         //プラン47 UQモバイル
@@ -649,7 +649,7 @@ class DatabaseSeeder extends Seeder
             'fee' => 1628,
             'carrier_flag' => 2,
             'carrier' => "MVNO",
-            'url' => "https://join.biglobe.ne.jp/mobile/plan/?cl=head_mobile_plan"
+            'url' => "https://www.uqwimax.jp/mobile/plan/"
         ]);
         
         //プラン48 UQモバイル
@@ -663,7 +663,7 @@ class DatabaseSeeder extends Seeder
             'fee' => 2728,
             'carrier_flag' => 2,
             'carrier' => "MVNO",
-            'url' => "https://join.biglobe.ne.jp/mobile/plan/?cl=head_mobile_plan"
+            'url' => "https://www.uqwimax.jp/mobile/plan/"
         ]);
         
         DB::table('plans')->insert([
@@ -676,7 +676,7 @@ class DatabaseSeeder extends Seeder
             'fee' => 3828,
             'carrier_flag' => 2,
             'carrier' => "MVNO",
-            'url' => "https://join.biglobe.ne.jp/mobile/plan/?cl=head_mobile_plan"
+            'url' => "https://www.uqwimax.jp/mobile/plan/"
         ]);
         
     }
