@@ -96,7 +96,7 @@
             <div class="radio-tile-group">
               
               <div class="input-container">
-                <input class="radio-button" type="radio" id="carrier_flag" name="carrier_flag" value="1" @if(isset($old_carrier) && (int)$old_carrier == 1) checked @endif>
+                <input class="radio-button" type="radio" id="carrier_flag" name="carrier_flag" value="1" @if(isset($old_carrier_flag) && (int)$old_carrier_flag == 1) checked @endif>
                 <div class="radio-tile">
                   <div class="fas fa-building fa-2x">
                   </div>
@@ -105,19 +105,20 @@
               </div>
               
               <div class="input-container">
-                <input class="radio-button" type="radio" id="carrier_flag" name="carrier_flag" value="2" @if(isset($old_carrier) && (int)$old_carrier == 2) checked @endif>
+                <input class="radio-button" type="radio" id="carrier_flag" name="carrier_flag" value="2" @if(isset($old_carrier_flag) && (int)$old_carrier_flag == 2) checked @endif>
                 <div class="radio-tile">
                   <div class="fab fa-battle-net fa-2x"></div>
                 <label for="carrier_flag" class="radio-tile-label ">いいえ</label>
                 </div>
               </div>
+              
            </div>
           </div> 
           
           
           <div class="container submit">   
-              <div class="text-center">
-                <input type="submit" class="btn btn-danger" value="シミュレーション結果を見る！">
+            <div class="text-center">
+              <input type="submit" class="btn btn-danger" value="シミュレーション結果を見る！">
             </div>
           </div>
 

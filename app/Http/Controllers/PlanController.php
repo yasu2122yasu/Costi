@@ -17,26 +17,26 @@ class PlanController extends Controller
         //capcityに送られてきたデータを変数に保存
         $search_capacity = $request->input('capacity');
         $search_cost = $request->input('cost');
-        $search_carrier = $request->input('carrier');
+        $search_carrier_flag = $request->input('carrier_flag');
         
         //session()を使用し検索条件を保存し代入（戻るボタンを押したときに検索条件を保持）
         $old_capacity = $request->session()->get("old_capacity");
         $old_cost = $request->session()->get("old_cost");
-        $old_carrier = $request->session()->get("old_carrier");
+        $old_carrier_flag = $request->session()->get("old_carrier_flag");
 
         //session()で一時的に保存した値をforget()で削除
         $request->session()->forget(
         [
           'old_capacity',
           'old_cost',
-          'old_carrier'
+          'old_carrier_flag'
         ]);
 
         //view(search.blade.php)に変数を渡す。
         $data = [
             "old_capacity" => $old_capacity,
             "old_cost" => $old_cost,
-            "old_carrier" => $old_carrier
+            "old_carrier" => $old_carrier_flag
         ];
         return view('/search', $data);
     }
@@ -49,7 +49,7 @@ class PlanController extends Controller
         //Requestで送られてきた値を代入
         $search_capacity = $request->input('capacity');
         $search_cost = $request->input('cost');
-        $search_carrier = $request->input('carrier');
+        $search_carrier_flag = $request->input('carrier_flag');
 
         //クエリビルダを使用し、planテーブルの中身を$queryに代入
         $query = Plan::query();
@@ -66,8 +66,8 @@ class PlanController extends Controller
             $query->where('cost', '=', $search_cost)->get();
         }
         
-        if (!is_null($search_carrier)) {
-            $query->where('carrier', '=', $search_carrier)->get();
+        if (!is_null($search_carrier_flag)) {
+            $query->where('carrier_flag', '=', $search_carrier_flag)->get();
         }
         
         //1ページ10件でページネーションを追加　（orderBy()を使用し、plansを昇順で表示）
@@ -82,22 +82,22 @@ class PlanController extends Controller
         
         $request->session()->put("old_capacity", $search_capacity);
         $request->session()->put("old_cost", $search_cost);
-        $request->session()->put("old_carrier", $search_carrier);
+        $request->session()->put("old_carrier_flag", $search_carrier_flag);
      
         $old_capacity = $request->session()->get("old_capacity");
         $old_cost = $request->session()->get("old_cost");
-        $old_carrier = $request->session()->get("old_carrier");
+        $old_carrier_flag = $request->session()->get("old_carrier_flag");
         
         
         //view(result.blade.php)に変数を渡す
             $data = [
               "search_capacity" => $search_capacity,
               "search_cost" => $search_cost,
-              "search_carrier" =>$search_carrier,
+              "search_carrier_flag" =>$search_carrier_flag,
               "plans" => $plans,
               "old_capacity" => $old_capacity,
               "old_cost" => $old_cost,
-              "old_carrier" => $old_carrier,
+              "old_carrier_flag" => $old_carrier_flag,
         ];
         return view('/result', $data);
         
@@ -106,7 +106,7 @@ class PlanController extends Controller
             return redirect('/')->withInput([ 
                 $old_capacity, 
                 $old_cost, 
-                $old_carrier, 
+                $old_carrier_flag, 
             ]);
         }
     }
